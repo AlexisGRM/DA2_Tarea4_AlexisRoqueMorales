@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>clima</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<h1>Puerto Peñasco</h1>
+
+<p>Temperatura</p>  
+
+ <ion-list>
+ 	<button ion-item *ngFor="let dia of pronosticos">
+	
+ 		{{dia.temp.day}}°C--{{dia.fecha | date:"dd-MMM-yyyy"}}
+ 	</button>
+ </ion-list>
+</ion-content>
